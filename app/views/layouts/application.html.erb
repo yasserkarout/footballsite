@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FootballSite</title>
+  <title>Teams</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Economica:700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<%=render 'pages/header' %>
+<% flash.each do |name, msg| %>
+		<%=content_tag(:div , msg, class: "alert alert-#{name}") %>
+	<% end %>
 <%= yield %>
-
 </body>
 </html>
