@@ -70,6 +70,6 @@ class MatchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def match_params
-      params.require(:match).permit(:sport, :description, :numOfPlayers, :location, :date)
+      params.require(:match).permit(:sport, :description, :numOfPlayers, :address, :date)
     end
 end
