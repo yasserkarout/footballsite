@@ -22,9 +22,12 @@
         <td><%= match.numOfPlayers %></td>
         <td><%= match.address %></td>
         <td><%= match.date %></td>
-        <td><%= link_to 'Show', match %></td>
+
+       <td><%= link_to 'Show', match %></td>
+        <% if current_user == match.user %>
         <td><%= link_to 'Edit', edit_match_path(match) %></td>
         <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
