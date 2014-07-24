@@ -13,9 +13,15 @@
 .navbar
 {
 	
-	font-size: large;
+	font-size: 25px;
+	
+	font-weight: bold;
+
+	
 
 }
+
+
 
 body{
 	padding: 60px;
@@ -27,8 +33,10 @@ body{
 }
 .navbar
 {
+
 	:hover{
 		background-color: transparent;
+
 	}
 }
 .btn{
@@ -81,3 +89,5 @@ body{
 #content {
   margin-left: 50px;
 }
+
+
