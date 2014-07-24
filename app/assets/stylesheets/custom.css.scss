@@ -6,19 +6,22 @@
 	text-align: center;
 	background-color: #32c6a6;
 	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
+	
 
 }
 
 .navbar
 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	
 	font-size: large;
 
 }
 
 body{
 	padding: 60px;
+
+	font-family: 'Open Sans Condensed', sans-serif;
+
 
 
 }
@@ -28,6 +31,53 @@ body{
 		background-color: transparent;
 	}
 }
+.btn{
+	color: #FFF;
+}
+.box{
+	margin :5px;
+	padding: 5px;
+	font-size: 18px;
+	line-height: 1.4em;
+	float:left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	box-shadow: 1px 1px 10px #444;
+	width: 270px;
+	height:200px;
+	border-style: solid;
+	border-width: 10px;
+	border-color:#32c6a6;
+	position: relative;
+	text-align: left;
+	
+}
+#sport
+{
+	background-color: #4079C8;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	border-radius:5px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+
+}
+#box_buttons
+{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
 
 
 
+}
+.info_title{
+	font-weight: bold;
+}
+#content {
+  margin-left: 50px;
+}

@@ -1,0 +1,7 @@
+<% unless user_signed_in? %>
+<div class="hero-unit">
+<h1>Welcome to #namehere</h1>
+<p>Find people to play your favorite sports with.</p>
+<p><%= link_to "Sign up now",new_user_registration_path, class: "btn btn-primary btn-large"%></p> 
+</div>
+<% end %>

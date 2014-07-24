@@ -1,0 +1,21 @@
+
+ <div class="box">
+ <p id="sport"><%= match.sport %></p>
+ <p><span class="info_title">Number of Players Needed: </span><%= match.numOfPlayers%></p>
+
+ <p><span class="info_title">Date and Time: </span><%= get_date (match.date) %></p>
+  <p><span class="info_title">Venue: </span><%= match.venue%></p>
+
+ <div id="box_buttons">
+ <% if current_user== match.user %>
+ <%= link_to 'View', match,class: "btn btn-primary" %> |
+<%= link_to 'Edit', edit_match_path(match) %> | 
+<%= link_to 'Delete', match, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<% else %>
+<%= link_to 'View', match,class: "btn btn-primary" %>
+<% end %>
+</div>
+
+</div>
+

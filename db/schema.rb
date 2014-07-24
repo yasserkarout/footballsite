@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140723032909) do
+ActiveRecord::Schema.define(version: 20140724030631) do
 
   create_table "locations", force: true do |t|
     t.string   "address"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20140723032909) do
     t.float    "latitude"
     t.float    "longitude"
     t.integer  "user_id"
+    t.string   "venue"
   end
 
   add_index "matches", ["user_id"], name: "index_matches_on_user_id"
