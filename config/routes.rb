@@ -1,4 +1,6 @@
 FootballSite::Application.routes.draw do
+  resources :attendance_lists
+
   resources :matches
 
   devise_for :users

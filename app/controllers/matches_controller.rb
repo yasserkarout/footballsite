@@ -27,7 +27,7 @@ class MatchesController < ApplicationController
   # POST /matches.json
   def create
     @match = current_user.matches.new(match_params)
-
+    @match.build_attendance_list
     respond_to do |format|
       if @match.save
         format.html { redirect_to @match, notice: 'Match was successfully created.' }
