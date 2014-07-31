@@ -12,6 +12,14 @@ class AttendanceListsController < ApplicationController
   def show
   end
 
+  def add_user
+    
+
+    AttendanceListsUsers.create(attendance_list_id: params[:id], user_id: current_user.id)
+    #create view for add_user to redirect to...
+
+  end
+
   # GET /attendance_lists/new
   def new
     @attendance_list = AttendanceList.new
@@ -40,7 +48,8 @@ class AttendanceListsController < ApplicationController
   # PATCH/PUT /attendance_lists/1
   # PATCH/PUT /attendance_lists/1.json
   def update
-    
+
+
     respond_to do |format|
       if @attendance_list.update(attendance_list_params)
         format.html { redirect_to @attendance_list, notice: 'Attendance list was successfully updated.' }

@@ -1,4 +1,5 @@
 class AttendanceList < ActiveRecord::Base
-	has_and_belongs_to_many :users
+	has_many :attendance_list_users
+  	has_many :users, :through => :attendance_list_users
 	belongs_to :match
 end

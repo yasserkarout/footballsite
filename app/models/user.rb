@@ -4,5 +4,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :matches
-  has_and_belongs_to_many :attendance_list
+  has_many :attendance_list_users
+  	has_many :attendance_lists, :through => :attendance_list_users
 end

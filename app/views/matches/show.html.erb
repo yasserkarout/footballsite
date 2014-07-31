@@ -27,7 +27,10 @@
 <% if current_user== @match.user %>
 <%= link_to 'Edit', edit_match_path(@match) %> |
 <%= link_to 'Back', matches_path %>
+<%= link_to 'Attend', attend_path %>
+
 <% else %>
  
 <%= link_to 'Back', matches_path %>
+<%= link_to 'Attend', attend_path %>
 <% end %>
